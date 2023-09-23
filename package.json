@@ -13,8 +13,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss styles.css -o dist/styles.css"
-
+    "build:css": "postcss styles.css -o dist/styles.css",
+    "watch:css": "postcss styles.css -o dist/styles.css --watch",
+    "serve": "npx serve -l 4001 .",
+    "start": "concurrently \"npm run serve\" \"npm run watch:css\""
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,9 @@
     "url": "https://github.com/gregory1996/personal-page-cv/issues"
   },
   "homepage": "https://github.com/gregory1996/personal-page-cv#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
 }
