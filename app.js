@@ -1,33 +1,35 @@
 var CVView = Backbone.View.extend({
     template: _.template(`
         <div class="bg-cover bg-center h-screen w-full flex items-center justify-center" style="background-image: url('assets/images/Emerald.png');">
-            <div class="bg-white p-6 rounded shadow-md w-3/4">
-                <header class="border-b-2 border-gray-200 mb-4 p-2">
-                    <h1 class="text-3xl">Header Section</h1>
-                </header>
-                <div class="flex">
-                    <aside class="bg-customBlack text-white w-1/4 p-4">
-                        <h2 class="text-xl mb-2">Sidebar</h2>
-                        <ul>
-                            <li class="mb-1">Item 1</li>
-                            <li class="mb-1">Item 2</li>
-                            <li class="mb-1">Item 3</li>
-                        </ul>
-                    </aside>
-                    <main class="w-3/4 p-4">
-                        <h2 class="text-2xl mb-4">Greg</h2>
-                        <p class="mb-4"><strong>Role:</strong> Software Developer</p>
-                        <h3 class="text-xl mb-4">Skills</h3>
-                        <ul>
-                            <li class="mb-2">JavaScript</li>
-                            <li class="mb-2">Python</li>
-                            <li class="mb-2">Backbone.js</li>
-                        </ul>
-                    </main>
+            <div class="w-3/4 overflow-hidden rounded-md">
+                <div class="bg-body-white border border-gray-400">
+                    <header class="border-b-2 bg-header-white text-center p-2">
+                        <p class="text-md">Grigoris Katrakazas CV</p>
+                    </header>
+                    <div class="flex">
+                        <aside class="bg-customBlack text-white w-1/4 p-4">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="assets/images/personal.png" alt="Your Image" class="w-40 h-40 border-gray-400 border rounded-full"/>
+                            </div>
+                            <h2 class="text-xl mb-2">Sidebar</h2>
+                            <ul>
+                                <li class="mb-1">Item 1</li>
+                                <li class="mb-1">Item 2</li>
+                                <li class="mb-1">Item 3</li>
+                            </ul>
+                        </aside>
+                        <main class="w-3/4 p-4">
+                            <h2 class="text-2xl mb-2">Grigoris katrakazas</h2>
+                            <p class="text-xl mb-4">Frontend Developer</p>
+                            <h3 class="text-xl mb-4">Skills</h3>
+                            <ul>
+                                <li class="mb-2">JavaScript</li>
+                                <li class="mb-2">Python</li>
+                                <li class="mb-2">Backbone.js</li>
+                            </ul>
+                        </main>
+                    </div>
                 </div>
-                <footer class="border-t-2 border-gray-200 mt-4 p-2">
-                    <p>Footer Section</p>
-                </footer>
             </div>
         </div>
     `),
