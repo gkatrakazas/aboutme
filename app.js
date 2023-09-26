@@ -26,10 +26,10 @@ var CVView = Backbone.View.extend({
                                 <p class="mb-4">As a 27-year-old Frontend Developer, I have a deep-rooted passion for programming, with a specialized focus on developing web applications.</p>
                             </div>
                             <div class="flex flex-col items-start space-y-4 w-1/3 ">
-                                <a href="https://github.com/gregory1996" class="text-sm"><i class="fa fa-github"></i> gregory1996</a>
-                                <a href="tel:+306980684913" class="text-sm"><i class="fa fa-phone"></i> +30 6980684913</a>
-                                <a href="mailto:grigoriskatrakazas@gmail.com" class="text-sm"><i class="fa fa-envelope"> grigoriskatrakazas@gmail.com</i></a>
-                                <a href="https://www.linkedin.com/in/gkatrakazas/" class="text-sm"><i class="fa fa-linkedin"></i> gkatrakazas</a>
+                                <a href="https://github.com/gregory1996" target="blank_" class="text-sm"><i class="fa fa-github"></i> gregory1996</a>
+                                <a href="tel:+306980684913" class="text-sm" target="blank_"><i class="fa fa-phone"></i> +30 6980684913</a>
+                                <a href="mailto:grigoriskatrakazas@gmail.com" target="blank_" class="text-sm"><i class="fa fa-envelope"> grigoriskatrakazas@gmail.com</i></a>
+                                <a href="https://www.linkedin.com/in/gkatrakazas/" target="blank_" class="text-sm"><i class="fa fa-linkedin"></i> gkatrakazas</a>
                             </div>
                         </div>
                         <section class="">
