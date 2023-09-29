@@ -40,6 +40,20 @@ A simple, elegant, single-page CV application created with BackboneJS and styled
     Open your web browser and visit http://localhost:4000.
     
 
+## 🐳 Running with Docker
+
+You can also run the Personal Page CV application using Docker. This allows you to containerize the application, making it easy to deploy and manage in different environments.
+
+### Building and run the Docker Image
+
+```
+docker build -t personal-page-cv .
+```
+
+```
+node docker-commands.js up cv 4001
+```
+
 ## 🛠️ Technologies Used
 
 -   [BackboneJS](https://backbonejs.org/)

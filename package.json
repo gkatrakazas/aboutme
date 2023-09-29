@@ -2,6 +2,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "backbone": "^1.5.0",
+    "dockerode": "^3.3.5",
     "jquery": "^3.7.1",
     "postcss": "^8.4.30",
     "postcss-cli": "^10.1.0",
