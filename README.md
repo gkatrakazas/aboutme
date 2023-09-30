@@ -1,5 +1,5 @@
 
-# 🌐 Personal Page CV
+# 🌐 Debian style CV
 
 A simple, elegant, single-page CV application created with BackboneJS and styled using Tailwind CSS. It's a perfect starting point for anyone looking to showcase their work and experience online.
 
