@@ -3,10 +3,32 @@ var configData = {
         title: "Grigoris Katrakazas CV"
     },
     aside: {
+        githubUrl: "https://github.com/gkatrakazas",
+        githubText: "gkatrakazas",
+        phone: "+30 6980684913",
+        phoneText: "+30 6980684913",
+        email: "grigoriskatrakazas@gmail.com",
+        emailText: "grigoriskatrakazas@gmail.com",
+        linkedinUrl: "https://www.linkedin.com/in/gkatrakazas/",
+        linkedinText: "gkatrakazas",
         programmingSkills: {
-            experienced: "Python, Flask, Django, HTML, CSS, React, JavaScript, C, C++, Unix/Linux OS, Git, TailwindCSS",
-            familiar: "JAVA, PHP, Nodejs, Express, Mongo DB, PostgreSQL, Docker"
-        },
+            coreLanguages: {
+                experienced: "JavaScript, Python, C, SQL",
+                familiar: "TypeScript, Java, C++"
+            },
+            webDevelopment: {
+                frontEnd: "HTML, CSS, React (Library), TailwindCSS, Bootstrap",
+                backEnd: "Flask, Django, Nodejs, Express",
+                database: "PostgreSQL, MySQL, SQLite3, Mongo DB, Microsoft SQL Server, Firebase Realtime Database"
+            },
+            dataFormats: {
+                experienced: "JSON, XML"
+            },
+            toolsAndTech: {
+                experienced: "Git, Unix/Linux OS, Jenkins",
+                familiar: "Docker"
+            },
+        },        
         languages: {
             Greek: {
                 proficiency: "Native"
@@ -16,20 +38,12 @@ var configData = {
             }
         },
         interests: ["Degree in Byzantine church music", "Professional painting & sketching"],
-        otherSkills: ["Teamwork", "Hard-working", "Continuous learning", "Critical Thinking", "Creativity", "Communication"]
+        otherSkills: ["Teamwork", "Hard-working", "Continuous learning", "Critical Thinking", "Creativity", "Communication", "Attention to Detail"]
     },
     main: {
         name: "GRIGORIS KATRAKAZAS",
         jobTitle: "Frontend Developer",
         about: "As a 27-year-old Frontend Developer, I have a deep-rooted passion for programming, with a specialized focus on developing web applications.",
-        githubUrl: "https://github.com/gkatrakazas",
-        githubText: "gkatrakazas",
-        phone: "+30 6980684913",
-        phoneText: "+30 6980684913",
-        email: "grigoriskatrakazas@gmail.com",
-        emailText: "grigoriskatrakazas@gmail.com",
-        linkedinUrl: "https://www.linkedin.com/in/gkatrakazas/",
-        linkedinText: "gkatrakazas",
         education: [
             {
                 period: "2022 - present",

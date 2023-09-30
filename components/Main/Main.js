@@ -2,16 +2,10 @@ var Main = Backbone.View.extend({
     // Define the template for the Main view
     template: _.template(`
     <div class="flex justify-between mb-4">
-    <div class="flex flex-col items-start w-2/3">
+    <div class="flex flex-col">
         <h2 class="text-2xl mb-2"><%= name %></h2>
         <p class="mb-2 text-xl"><%= jobTitle %></p>
         <p class="text-sm"><%= about %></p>
-    </div>
-    <div class="flex flex-col items-start space-y-2 w-1/3">
-        <a href="<%= githubUrl %>" target="blank_" class="text-sm"><i class="fa fa-github"></i> <%= githubText %></a>
-        <a href="tel:<%= phone %>" class="text-sm" target="blank_"><i class="fa fa-phone"></i> <%= phoneText %></a>
-        <a href="mailto:<%= email %>" target="blank_" class="text-sm"><i class="fa fa-envelope"></i> <%= emailText %></a>
-        <a href="<%= linkedinUrl %>" target="blank_" class="text-sm"><i class="fa fa-linkedin"></i> <%= linkedinText %></a>
     </div>
 </div>
 <section class="">
@@ -20,9 +14,10 @@ var Main = Backbone.View.extend({
     <article class="mb-2 flex">
         <p class="mb-1 flex-shrink-0 mr-4 font-bold" style="min-width: 120px;"><%= edu.period %></p>
         <div>
-            <p class="font-bold"><%= edu.degree %></p>
-            <p class="text-sm"><%= edu.university %></p>
-            <p class="text-sm"><%= edu.specialization %></p>
+            <p> <strong> <%= edu.degree %>, </strong> <%= edu.university %></p>
+            <% if (edu.specialization) { %>
+                <p class="text-sm">Specialization: <%= edu.specialization %></p>
+            <% } %>
         </div>
     </article>
 <% }); %>
