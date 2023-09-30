@@ -11,8 +11,8 @@ $(document).ready(function () {
         // Template for the view.
         template: _.template(`
         <div class="bg-cover bg-center h-full w-full flex items-center justify-center" style="background-image: url('assets/images/Emerald.png');">
-        <div class="w-3/4 overflow-hidden rounded-md">
-            <div class="bg-body-white border border-gray-400">
+        <div class="w-3/4 overflow-hidden my-10 rounded-md">
+            <div class="bg-body-white border border-gray-400 ">
                 <header id="headerContainer" class="border-b-2 bg-header-white text-center p-2">
                 </header>
                 <div class="flex">

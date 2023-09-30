@@ -19,11 +19,11 @@ var configData = {
         otherSkills: ["Teamwork", "Hard-working", "Continuous learning", "Critical Thinking", "Creativity", "Communication"]
     },
     main: {
-        name: "Grigoris Katrakazas",
+        name: "GRIGORIS KATRAKAZAS",
         jobTitle: "Frontend Developer",
         about: "As a 27-year-old Frontend Developer, I have a deep-rooted passion for programming, with a specialized focus on developing web applications.",
-        githubUrl: "https://github.com/gregory1996",
-        githubText: "gregory1996",
+        githubUrl: "https://github.com/gkatrakazas",
+        githubText: "gkatrakazas",
         phone: "+30 6980684913",
         phoneText: "+30 6980684913",
         email: "grigoriskatrakazas@gmail.com",
@@ -49,72 +49,68 @@ var configData = {
                 university: "National Technical University of Athens"
             }
         ],
-        experience: [
+        professional: [
             {
-                category: "Work",
-                items: [
-                    {
-                        title: "Front-end Developer",
-                        period: "GUNET | 6/23 - present"
-                    },
-                    {
-                        title: "Full Stack Developer",
-                        period: "8BELLS Research LTD | 10/21 - 5/23",
-                        description: "Development and maintenance of web applications (React, Flask, PostgreSQL) and Implementing machine learning algorithms (Python)."
-                    }
-                ]
+                title: "Front-end Developer",
+                company: "GUNET",
+                period: "6/23 - Present",
             },
             {
-                category: "University",
-                items: [
-                    {
-                        title: "",
-                        description: "Vector image representation in lower dimension in space using autocoding neural network C++ / Python",
-                        period: ""
-                    },
-                    {
-                        title: "",
-                        description: "Artificial Intelligence: Project from Berkeley University (Python)",
-                        period: ""
-                    },
-                    {
-                        title: "",
-                        description: "Created operational site for Athens TransportationsOASA (Django, SQLite3)",
-                        period: ""
-                    },
-                    {
-                        title: "",
-                        description: "Simulation of public service building (C++, Java)",
-                        period: ""
-                    }
+                title: "Full Stack Developer",
+                company: "8BELLS Research LTD",
+                period: "10/21 - 5/23",
+                description: [
+                    "Developed and maintained web applications utilizing React, Flask, and PostgreSQL.",
+                    "Implemented machine learning algorithms using Python."
                 ]
             },
+        ],
+        university: [
             {
-                category: "Personal",
-                items: [
-                    {
-                        description: "Developed a Desktop Application for the Greek Army to predict soldiers' duties utilizing (Python, PySimpleGUI, SQLite3)",
-                        period: ""
-                    },
-                    {
-                        description: "Developed a Web Application for Dietitians to efficiently organize and store patient data (Django, SQLite3)",
-                        period: ""
-                    }
-                ]
-            }
+                title: "Operational Site Development for Athens Transportations, OASA",
+                technology: "Django, SQLite3",
+                description: "Developed a fully functional operational site, which was a critical project due to its real-world application."
+            },
+            {
+                title: "Vector Image Representation",
+                technology: "C++ / Python",
+                description: "Executed a project focusing on lowering the dimension in space using autoencoding neural networks, which had significant implications in image processing."
+            },
+        ],
+        personal: [
+            {
+                title: 'Mycashdad',
+                technology: 'ReactJS, Firebase, Tailwindcss',
+                description: 'A user-friendly web app for manage and share budgets, expense tracking, and achieving financial goals swiftly.',
+                link: 'https://mycashdad.com'
+            },
+            {
+                title: "Web Application for Dietitians",
+                technology: "Django, SQLite3",
+                description: "Created an application to efficiently organize and store patient data, enhancing dietitians’ productivity.",
+                link: ''
+            },
+            {
+                title: "Greek Army Desktop Application",
+                technology: "Python, PySimpleGUI, SQLite3",
+                description: "Developed a predictive model and application for soldiers' duties allocation, streamlining the army's operational flow.",
+                link: ''
+            },
+
+
         ],
         volunteering: [
             {
                 period: "2018 - 2020",
-                organization: "Active member @Thinkbiz",
-                role: "1st Entrepreneurship Organization in Greece based on AUEB.",
-                description: ""
+                organization: "@Thinkbiz",
+                role: "Active member",
+                description: "1st Entrepreneurship Organization in Greece based on AUEB."
             },
             {
                 period: "2018 - 2019",
-                organization: "Member of the Organizational Committee @Codebiz",
-                role: "A new project, in which youth entrepreneurial culture & coding are combined.",
-                description: ""
+                organization: "@Thinkbiz",
+                role: "Member of the Organizational Committee @Codebiz",
+                description: "A new project, in which youth entrepreneurial culture & coding are combined."
             }
         ]
     }
