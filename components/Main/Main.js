@@ -8,8 +8,10 @@ var Main = Backbone.View.extend({
         <p class="text-sm"><%= about %></p>
     </div>
 </div>
+<hr class="my-2 border-t border-customBlack">
+
 <section class="">
-<h2 class="text-2xl mb-4">EDUCATION</h2>
+<h2 class="text-2xl pt-2"><i class="fa fa-university" aria-hidden="true"></i> EDUCATION</h2>
 <% _.each(education, function(edu) { %>
     <article class="mb-2 flex">
         <p class="mb-1 flex-shrink-0 mr-4 font-bold" style="min-width: 120px;"><%= edu.period %></p>
@@ -22,8 +24,10 @@ var Main = Backbone.View.extend({
     </article>
 <% }); %>
 </section>
-<section class="pt-4">
-<h2 class="text-2xl mb-4">PROFESSIONAL EXPERIENCE</h2>
+<hr class="my-2 border-t border-customBlack">
+
+<section class="pt-2">
+<h2 class="text-2xl mb-4"><i class="fa fa-envelope"></i> PROFESSIONAL EXPERIENCE</h2>
 <% _.each(professional, function(prof) { %>
     <article class="mb-4">
         <header class="mb-1">
@@ -39,9 +43,10 @@ var Main = Backbone.View.extend({
     </article>
 <% }); %>
 </section>
+<hr class="my-2 border-t border-customBlack">
 
-<section class="pt-4">
-<h2 class="text-2xl mb-4">SELECTED UNIVERSITY PROJECTS</h2>
+<section class="pt-2">
+<h2 class="text-2xl mb-4"><i class="fa fa-tasks"></i> SELECTED UNIVERSITY PROJECTS</h2>
 <% _.each(university, function(uni) { %>
     <article class="mb-4">
         <header class="mb-1">
@@ -51,9 +56,10 @@ var Main = Backbone.View.extend({
     </article>
 <% }); %>
 </section>
+<hr class="my-2 border-t border-customBlack">
 
-<section class="pt-4">
-<h2 class="text-2xl mb-4">PERSONAL PROJECTS</h2>
+<section class="pt-2">
+<h2 class="text-2xl mb-4"><i class="fa fa-globe"></i> PERSONAL PROJECTS</h2>
 <% _.each(personal, function(per) { %>
     <article class="mb-4">
         <header class="mb-1">
@@ -66,9 +72,10 @@ var Main = Backbone.View.extend({
     </article>
 <% }); %>
 </section>
+<hr class="my-2 border-t border-customBlack">
 
-<section class="mt-4">
-<h2 class="text-2xl mb-4">VOLUNTEERING</h2>
+<section class="mt-2">
+<h2 class="text-2xl mb-4"><i class="fa fa-gift"></i> VOLUNTEERING</h2>
 <% _.each(volunteering, function(volunteer) { %>
     <article class="mb-4">
         <div class="flex">
