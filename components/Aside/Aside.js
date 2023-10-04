@@ -53,7 +53,7 @@ var Aside = Backbone.View.extend({
                 <div class="bg-gray-300 h-4 rounded-full w-3/4">
                     <div class="bg-green-500 h-full rounded-full" style="width:100%;"></div>
                 </div>
-                <p class="text-sm text-gray-500">Native</p>
+                <p class="text-sm text-gray-400">Native</p>
             </div>
 
             <div class="mb-2 ">
@@ -61,7 +61,7 @@ var Aside = Backbone.View.extend({
                 <div class="bg-gray-300 h-4 rounded-full w-3/4">
                     <div class="bg-green-500 h-full rounded-full" style="width:80%;"></div>
                 </div>
-                <p class="text-sm text-gray-500">Fluent</p>
+                <p class="text-sm text-gray-400">Fluent</p>
             </div>
         </section>
         <hr class="my-2 border-t border-gray-300">

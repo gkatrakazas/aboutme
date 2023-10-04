@@ -1,6 +1,6 @@
 var configData = {
     header: {
-        title: "Grigoris Katrakazas CV"
+        title: "Grigoris Katrakazas Page"
     },
     aside: {
         githubUrl: "https://github.com/gkatrakazas",
