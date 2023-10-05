@@ -10,25 +10,44 @@ $(document).ready(function () {
         // Template for the view.
         template: _.template(`
             <div class="bg-cover flex flex-col bg-center min-h-screen h-full w-full flex items-center justify-top" style="background-image: url('assets/images/Emerald.png');">
-                <nav class="top-menu flex flex-row justify-center items-center my-5">
-                    <ul class="flex space-x-4">
+                <nav class="top-menu flex flex-row w-3/4 justify-center my-5 bg-menu bg-opacity-50 rounded-md p-2">
+                    <ul class="flex space-x-4 justify-center">
                         <li class="flex flex-col items-center">
-                            <a href="#" class="flex flex-col items-center text-white" data-tab="home">
-                                <img src="assets/images/home.png" size alt="Home" class="w-8">
-                            Home
+                            <a href="#" class="flex flex-col items-center justify-center text-white px-3 py-1 text-sm rounded-md" data-tab="home">
+                                <div class="flex items-center justify-center">
+                                    <!-- Dot indicator initially hidden -->
+                                    <div class="h-2 w-2 bg-red-500 rounded-full hidden dot-indicator"></div>
+                                    <div class="flex flex-col items-center">
+                                        <img src="assets/images/home.png" size alt="Home" class="w-8">
+                                        <span>Home</span>
+                                    </div>
+                                </div>
                             </a>
                         </li>
+
                         <li class="flex flex-col items-center">
-                            <a href="#" class="flex flex-col items-center text-white" data-tab="cv">
-                            <img src="assets/images/cv.png" size alt="Cv" class="w-8">
-                            CV
-                            </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-white px-3 py-1 text-sm rounded-md" data-tab="cv">
+                        <div class="flex items-center justify-center">
+                            <!-- Dot indicator initially hidden -->
+                            <div class="h-2 w-2 bg-red-500 rounded-full hidden dot-indicator"></div>
+                            <div class="flex flex-col items-center">
+                                <img src="assets/images/cv.png" size alt="CV" class="w-8">
+                                <span>CV</span>
+                            </div>
+                        </div>
+                    </a>
                         </li>
                         <li class="flex flex-col items-center">
-                            <a href="#" class="flex flex-col items-center text-white" data-tab="contact">
-                            <img src="assets/images/contact.png" size alt="Contact" class="w-8">
-                            Contact
-                            </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-white px-3 py-1 text-sm rounded-md" data-tab="contact">
+                        <div class="flex items-center justify-center">
+                            <!-- Dot indicator initially hidden -->
+                            <div class="h-2 w-2 bg-red-500 rounded-full hidden dot-indicator"></div>
+                            <div class="flex flex-col items-center">
+                                <img src="assets/images/contact.png" size alt="Contact" class="w-8">
+                                <span>Contact</span>
+                            </div>
+                        </div>
+                    </a>
                         </li>
                     </ul>
                 </nav>        
@@ -41,17 +60,32 @@ $(document).ready(function () {
             </div>
         `),
 
-        // Render the view and append the Aside view to its container.
-        render: function () {
-            this.$el.html(this.template());
-            this.$('#cvContainer').html(this.CV.render().el); // Render Header and append it to its placeholder
-            this.$('#homeContainer').html(this.Home.render().el); // Render Header and append it to its placeholder
+// Inside the render function
+render: function () {
+    this.$el.html(this.template());
 
-            // Initially show the "Home" section
-            this.CV.$el.hide();
-            this.Home.$el.show();
-            return this;
-        },
+    // Render your other content
+    this.$('#cvContainer').html(this.CV.render().el);
+    this.$('#homeContainer').html(this.Home.render().el);
+
+    // Initially hide the "CV" section
+    this.CV.$el.hide();
+
+    // Set the default tab as active by adding the 'bg-menu bg-opacity-75' class
+    var defaultTab = this.$('[data-tab="home"]');
+    defaultTab.addClass('bg-menu bg-opacity-75');
+
+    // Delay showing the dot for the default tab using a setTimeout
+    var self = this;
+    setTimeout(function () {
+        self.showDot('home');
+    }, 0);
+
+    return this;
+},
+
+
+
         events: {
             'click [data-tab]': 'handleTabClick'
         },
@@ -59,7 +93,14 @@ $(document).ready(function () {
         handleTabClick: function (e) {
             e.preventDefault();
             var tabName = $(e.currentTarget).data('tab');
+                // Remove the bg- classes from all tabs
+            $('[data-tab]').removeClass('bg-menu bg-opacity-75');
+
+            // Add the bg-your-color class to the clicked tab
+            $(e.currentTarget).addClass('bg-menu bg-opacity-75');
             this.showTab(tabName);
+            this.showDot(tabName); // Show the dot for the clicked tab
+
         },
         // Show the selected tab
         showTab: function (tabName) {
@@ -73,6 +114,14 @@ $(document).ready(function () {
             } else if (tabName === 'home') {
                 this.Home.$el.show();
             }
+        },
+        // Function to show the dot for the selected tab
+        showDot: function (tabName) {
+            // Hide all dots initially
+            $('[data-tab] .dot-indicator').addClass('hidden');
+        
+            // Show the dot for the selected tab by removing the 'hidden' class
+            $('[data-tab="' + tabName + '"] .dot-indicator').removeClass('hidden');
         }
     });
 
