@@ -1,7 +1,7 @@
 
-# 🌐 Personal Page CV
+# 🌐 About Me Personal page
 
-A simple, elegant, single-page CV application created with BackboneJS and styled using Tailwind CSS. It's a perfect starting point for anyone looking to showcase their work and experience online.
+A simple, elegant,linux style, about me personal single-page application created with BackboneJS and styled using Tailwind CSS. It's a perfect starting point for anyone looking to showcase their work and experience online.
 
 ## 🌟 Features
 - **Responsive Design**: Looks great on both mobile and desktop devices.
