@@ -11,6 +11,7 @@ module.exports = {
         'header-white':'#eff0f1',
         'body-white':'#efefef',
         'menu':'#2e3337',
+        'active':'#61a397',
       },
     },
   },
