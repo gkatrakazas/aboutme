@@ -47,11 +47,11 @@ You can also run the Personal Page CV application using Docker. This allows you 
 ### Building and run the Docker Image
 
 ```
-docker build -t personal-page-cv .
+docker build -t aboutme-page .
 ```
 
 ```
-node docker-commands.js up cv 4001
+node docker-commands.js up aboutme .
 ```
 
 ## 🛠️ Technologies Used
